@@ -1,0 +1,3 @@
+[submodule "vendor/NestDK"]
+	path = vendor/NestDK
+	url = git@github.com:nestlabs/iOS-NestDK.git
