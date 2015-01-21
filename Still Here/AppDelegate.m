@@ -12,7 +12,9 @@
 
 @interface AppDelegate ()
 
-@property (nonatomic, retain) SHANestOperations *nestOperationsManager;
+@property (nonatomic, strong) SHANestOperations *nestOperationsManager;
+@property (nonatomic, strong) NSStatusItem *statusItem;
+@property (nonatomic, weak) IBOutlet NSMenu *statusMenu;
 
 @end
 
@@ -51,6 +53,30 @@
 		[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://home.nest.com/login/oauth2?client_id=%@&state=%@", kSHANestAPIClientID, [NSUUID UUID].UUIDString]]];
 	else
 		[self subscribeToNestUpdates];
+}
+
+- (void)awakeFromNib
+{
+	self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+	self.statusItem.menu = self.statusMenu;
+	self.statusItem.button.accessibilityTitle = @"Still Awake Menu";
+
+	NSImage *houseIconImage = [NSImage imageNamed:@"houseMenu"];
+	[houseIconImage setTemplate:YES];
+	self.statusItem.button.image = houseIconImage;
+}
+
+- (IBAction)toggleDockIcon:(id)sender
+{
+	if ([NSApp activationPolicy] == NSApplicationActivationPolicyRegular)
+		[NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
+	else
+		[NSApp setActivationPolicy:NSApplicationActivationPolicyRegular];
+}
+
+- (IBAction)quit:(id)sender
+{
+	[NSApp terminate:nil];
 }
 
 @end

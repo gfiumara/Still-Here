@@ -641,14 +641,24 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="statusMenu" destination="jRr-4Y-1P5" id="iCU-UV-CNd"/>
+                    </connections>
+                </customObject>
                 <menu id="jRr-4Y-1P5">
                     <items>
                         <menuItem title="Toggle Dock Icon" id="pjS-sF-9g1">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="toggleDockIcon:" target="Voe-Tx-rLC" id="fW1-d2-CzI"/>
+                            </connections>
                         </menuItem>
                         <menuItem title="Quit" id="LiI-vE-5fo">
                             <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="quit:" target="Voe-Tx-rLC" id="8lp-NU-B8v"/>
+                            </connections>
                         </menuItem>
                     </items>
                 </menu>

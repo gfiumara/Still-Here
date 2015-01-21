@@ -23,6 +23,8 @@
 		0813D4891A6D8E07001C4E21 /* Structure.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4881A6D8E07001C4E21 /* Structure.m */; };
 		0813D48C1A6DD9D3001C4E21 /* SHAUsageStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */; };
 		0813D48F1A70521F001C4E21 /* SHANotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D48E1A70521F001C4E21 /* SHANotificationManager.m */; };
+		0813D4921A706543001C4E21 /* houseMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4901A706542001C4E21 /* houseMenu@2x.png */; };
+		0813D4931A706543001C4E21 /* houseMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4911A706543001C4E21 /* houseMenu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAUsageStatus.m; sourceTree = "<group>"; };
 		0813D48D1A70521F001C4E21 /* SHANotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHANotificationManager.h; sourceTree = "<group>"; };
 		0813D48E1A70521F001C4E21 /* SHANotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHANotificationManager.m; sourceTree = "<group>"; };
+		0813D4901A706542001C4E21 /* houseMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "houseMenu@2x.png"; sourceTree = "<group>"; };
+		0813D4911A706543001C4E21 /* houseMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseMenu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 		0813D4391A6D57B8001C4E21 /* Still Here */ = {
 			isa = PBXGroup;
 			children = (
+				0813D4901A706542001C4E21 /* houseMenu@2x.png */,
+				0813D4911A706543001C4E21 /* houseMenu.png */,
 				0813D43C1A6D57B8001C4E21 /* AppDelegate.h */,
 				0813D43D1A6D57B8001C4E21 /* AppDelegate.m */,
 				0813D48D1A70521F001C4E21 /* SHANotificationManager.h */,
@@ -210,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0813D4451A6D57B8001C4E21 /* Images.xcassets in Resources */,
+				0813D4931A706543001C4E21 /* houseMenu.png in Resources */,
+				0813D4921A706543001C4E21 /* houseMenu@2x.png in Resources */,
 				0813D4481A6D57B8001C4E21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
