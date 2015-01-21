@@ -10,3 +10,4 @@
 
 NSString * const kSHANestAPIClientID = @"<# Enter your Client ID here #>";
 NSString * const kSHANestAccessTokenKey = @"access_token";
+const NSUInteger kSHAFifteenMinutes = 900;

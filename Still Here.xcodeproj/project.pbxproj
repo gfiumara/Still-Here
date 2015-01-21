@@ -11,6 +11,18 @@
 		0813D4401A6D57B8001C4E21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D43F1A6D57B8001C4E21 /* main.m */; };
 		0813D4451A6D57B8001C4E21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4441A6D57B8001C4E21 /* Images.xcassets */; };
 		0813D4481A6D57B8001C4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4461A6D57B8001C4E21 /* Main.storyboard */; };
+		0813D4621A6D6943001C4E21 /* SHAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4611A6D6943001C4E21 /* SHAConstants.m */; };
+		0813D4651A6D6CB9001C4E21 /* SHANestOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4641A6D6CB9001C4E21 /* SHANestOperations.m */; };
+		0813D46F1A6D7D21001C4E21 /* NestStructureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4691A6D7D21001C4E21 /* NestStructureManager.m */; };
+		0813D4721A6D7D21001C4E21 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813D46E1A6D7D21001C4E21 /* Firebase.framework */; };
+		0813D4751A6D7D48001C4E21 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4741A6D7D48001C4E21 /* FirebaseManager.m */; };
+		0813D4781A6D7EB1001C4E21 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813D4771A6D7EB1001C4E21 /* CFNetwork.framework */; };
+		0813D47A1A6D7EDB001C4E21 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813D4791A6D7EDB001C4E21 /* libc++.dylib */; };
+		0813D47E1A6D7EF9001C4E21 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813D47D1A6D7EF9001C4E21 /* SystemConfiguration.framework */; };
+		0813D4851A6D800F001C4E21 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813D4841A6D800F001C4E21 /* libicucore.dylib */; };
+		0813D4891A6D8E07001C4E21 /* Structure.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4881A6D8E07001C4E21 /* Structure.m */; };
+		0813D48C1A6DD9D3001C4E21 /* SHAUsageStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */; };
+		0813D48F1A70521F001C4E21 /* SHANotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D48E1A70521F001C4E21 /* SHANotificationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +33,26 @@
 		0813D43F1A6D57B8001C4E21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0813D4441A6D57B8001C4E21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0813D4471A6D57B8001C4E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0813D4601A6D6943001C4E21 /* SHAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAConstants.h; sourceTree = "<group>"; };
+		0813D4611A6D6943001C4E21 /* SHAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAConstants.m; sourceTree = "<group>"; };
+		0813D4631A6D6CB9001C4E21 /* SHANestOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHANestOperations.h; sourceTree = "<group>"; };
+		0813D4641A6D6CB9001C4E21 /* SHANestOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHANestOperations.m; sourceTree = "<group>"; };
+		0813D4681A6D7D21001C4E21 /* NestStructureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestStructureManager.h; path = "vendor/NestDK/iOS-NestDK/NestStructureManager.h"; sourceTree = "<group>"; };
+		0813D4691A6D7D21001C4E21 /* NestStructureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NestStructureManager.m; path = "vendor/NestDK/iOS-NestDK/NestStructureManager.m"; sourceTree = "<group>"; };
+		0813D46E1A6D7D21001C4E21 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = vendor/NestDK/third_party/Firebase.framework; sourceTree = "<group>"; };
+		0813D4731A6D7D48001C4E21 /* FirebaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirebaseManager.h; path = "vendor/NestDK/iOS-NestDK/FirebaseManager.h"; sourceTree = "<group>"; };
+		0813D4741A6D7D48001C4E21 /* FirebaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirebaseManager.m; path = "vendor/NestDK/iOS-NestDK/FirebaseManager.m"; sourceTree = "<group>"; };
+		0813D4761A6D7DA8001C4E21 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0813D4771A6D7EB1001C4E21 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0813D4791A6D7EDB001C4E21 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		0813D47D1A6D7EF9001C4E21 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0813D4841A6D800F001C4E21 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		0813D4871A6D8E07001C4E21 /* Structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Structure.h; sourceTree = "<group>"; };
+		0813D4881A6D8E07001C4E21 /* Structure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Structure.m; sourceTree = "<group>"; };
+		0813D48A1A6DD9D3001C4E21 /* SHAUsageStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAUsageStatus.h; sourceTree = "<group>"; };
+		0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAUsageStatus.m; sourceTree = "<group>"; };
+		0813D48D1A70521F001C4E21 /* SHANotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHANotificationManager.h; sourceTree = "<group>"; };
+		0813D48E1A70521F001C4E21 /* SHANotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHANotificationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0813D4851A6D800F001C4E21 /* libicucore.dylib in Frameworks */,
+				0813D47E1A6D7EF9001C4E21 /* SystemConfiguration.framework in Frameworks */,
+				0813D47A1A6D7EDB001C4E21 /* libc++.dylib in Frameworks */,
+				0813D4781A6D7EB1001C4E21 /* CFNetwork.framework in Frameworks */,
+				0813D4721A6D7D21001C4E21 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +74,8 @@
 		0813D42E1A6D57B8001C4E21 = {
 			isa = PBXGroup;
 			children = (
+				0813D4861A6D801D001C4E21 /* System Frameworks */,
+				0813D4661A6D7CE4001C4E21 /* vendor */,
 				0813D4391A6D57B8001C4E21 /* Still Here */,
 				0813D4381A6D57B8001C4E21 /* Products */,
 			);
@@ -55,6 +94,14 @@
 			children = (
 				0813D43C1A6D57B8001C4E21 /* AppDelegate.h */,
 				0813D43D1A6D57B8001C4E21 /* AppDelegate.m */,
+				0813D48D1A70521F001C4E21 /* SHANotificationManager.h */,
+				0813D48E1A70521F001C4E21 /* SHANotificationManager.m */,
+				0813D4631A6D6CB9001C4E21 /* SHANestOperations.h */,
+				0813D4641A6D6CB9001C4E21 /* SHANestOperations.m */,
+				0813D48A1A6DD9D3001C4E21 /* SHAUsageStatus.h */,
+				0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */,
+				0813D4601A6D6943001C4E21 /* SHAConstants.h */,
+				0813D4611A6D6943001C4E21 /* SHAConstants.m */,
 				0813D4441A6D57B8001C4E21 /* Images.xcassets */,
 				0813D4461A6D57B8001C4E21 /* Main.storyboard */,
 				0813D43A1A6D57B8001C4E21 /* Supporting Files */,
@@ -67,8 +114,42 @@
 			children = (
 				0813D43B1A6D57B8001C4E21 /* Info.plist */,
 				0813D43F1A6D57B8001C4E21 /* main.m */,
+				0813D4761A6D7DA8001C4E21 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0813D4661A6D7CE4001C4E21 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0813D4671A6D7CE9001C4E21 /* NestDK */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		0813D4671A6D7CE9001C4E21 /* NestDK */ = {
+			isa = PBXGroup;
+			children = (
+				0813D4731A6D7D48001C4E21 /* FirebaseManager.h */,
+				0813D4741A6D7D48001C4E21 /* FirebaseManager.m */,
+				0813D4681A6D7D21001C4E21 /* NestStructureManager.h */,
+				0813D4691A6D7D21001C4E21 /* NestStructureManager.m */,
+				0813D4871A6D8E07001C4E21 /* Structure.h */,
+				0813D4881A6D8E07001C4E21 /* Structure.m */,
+				0813D46E1A6D7D21001C4E21 /* Firebase.framework */,
+			);
+			name = NestDK;
+			sourceTree = "<group>";
+		};
+		0813D4861A6D801D001C4E21 /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0813D4841A6D800F001C4E21 /* libicucore.dylib */,
+				0813D47D1A6D7EF9001C4E21 /* SystemConfiguration.framework */,
+				0813D4791A6D7EDB001C4E21 /* libc++.dylib */,
+				0813D4771A6D7EB1001C4E21 /* CFNetwork.framework */,
+			);
+			name = "System Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +223,13 @@
 			files = (
 				0813D4401A6D57B8001C4E21 /* main.m in Sources */,
 				0813D43E1A6D57B8001C4E21 /* AppDelegate.m in Sources */,
+				0813D4621A6D6943001C4E21 /* SHAConstants.m in Sources */,
+				0813D4651A6D6CB9001C4E21 /* SHANestOperations.m in Sources */,
+				0813D4751A6D7D48001C4E21 /* FirebaseManager.m in Sources */,
+				0813D4891A6D8E07001C4E21 /* Structure.m in Sources */,
+				0813D48F1A70521F001C4E21 /* SHANotificationManager.m in Sources */,
+				0813D46F1A6D7D21001C4E21 /* NestStructureManager.m in Sources */,
+				0813D48C1A6DD9D3001C4E21 /* SHAUsageStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +328,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/NestDK/third_party",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Still Here/PrefixHeader.pch";
 				INFOPLIST_FILE = "Still Here/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,8 +346,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/NestDK/third_party",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Still Here/PrefixHeader.pch";
 				INFOPLIST_FILE = "Still Here/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -276,6 +378,7 @@
 				0813D4591A6D57B8001C4E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

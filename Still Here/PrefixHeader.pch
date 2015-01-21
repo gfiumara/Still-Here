@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  Still Here
+//
+//  Created by Greg Fiumara on 1/19/15.
+//  Copyright (c) 2015 Greg Fiumara. All rights reserved.
+//
+
+#ifndef Still_Here_PrefixHeader_pch
+#define Still_Here_PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import "SHAConstants.h"
+
+#endif
