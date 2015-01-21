@@ -13,7 +13,6 @@
 		0813D4481A6D57B8001C4E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4461A6D57B8001C4E21 /* Main.storyboard */; };
 		0813D4621A6D6943001C4E21 /* SHAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4611A6D6943001C4E21 /* SHAConstants.m */; };
 		0813D4651A6D6CB9001C4E21 /* SHANestOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4641A6D6CB9001C4E21 /* SHANestOperations.m */; };
-		0813D46F1A6D7D21001C4E21 /* NestStructureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4691A6D7D21001C4E21 /* NestStructureManager.m */; };
 		0813D4721A6D7D21001C4E21 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813D46E1A6D7D21001C4E21 /* Firebase.framework */; };
 		0813D4751A6D7D48001C4E21 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4741A6D7D48001C4E21 /* FirebaseManager.m */; };
 		0813D4781A6D7EB1001C4E21 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813D4771A6D7EB1001C4E21 /* CFNetwork.framework */; };
@@ -25,6 +24,7 @@
 		0813D48F1A70521F001C4E21 /* SHANotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D48E1A70521F001C4E21 /* SHANotificationManager.m */; };
 		0813D4921A706543001C4E21 /* houseMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4901A706542001C4E21 /* houseMenu@2x.png */; };
 		0813D4931A706543001C4E21 /* houseMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0813D4911A706543001C4E21 /* houseMenu.png */; };
+		0813D4961A7068A8001C4E21 /* NestStructureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4941A7068A8001C4E21 /* NestStructureManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +39,6 @@
 		0813D4611A6D6943001C4E21 /* SHAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAConstants.m; sourceTree = "<group>"; };
 		0813D4631A6D6CB9001C4E21 /* SHANestOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHANestOperations.h; sourceTree = "<group>"; };
 		0813D4641A6D6CB9001C4E21 /* SHANestOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHANestOperations.m; sourceTree = "<group>"; };
-		0813D4681A6D7D21001C4E21 /* NestStructureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestStructureManager.h; path = "vendor/NestDK/iOS-NestDK/NestStructureManager.h"; sourceTree = "<group>"; };
-		0813D4691A6D7D21001C4E21 /* NestStructureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NestStructureManager.m; path = "vendor/NestDK/iOS-NestDK/NestStructureManager.m"; sourceTree = "<group>"; };
 		0813D46E1A6D7D21001C4E21 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = vendor/NestDK/third_party/Firebase.framework; sourceTree = "<group>"; };
 		0813D4731A6D7D48001C4E21 /* FirebaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirebaseManager.h; path = "vendor/NestDK/iOS-NestDK/FirebaseManager.h"; sourceTree = "<group>"; };
 		0813D4741A6D7D48001C4E21 /* FirebaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirebaseManager.m; path = "vendor/NestDK/iOS-NestDK/FirebaseManager.m"; sourceTree = "<group>"; };
@@ -49,14 +47,16 @@
 		0813D4791A6D7EDB001C4E21 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		0813D47D1A6D7EF9001C4E21 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0813D4841A6D800F001C4E21 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		0813D4871A6D8E07001C4E21 /* Structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Structure.h; sourceTree = "<group>"; };
-		0813D4881A6D8E07001C4E21 /* Structure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Structure.m; sourceTree = "<group>"; };
+		0813D4871A6D8E07001C4E21 /* Structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Structure.h; path = ../Structure.h; sourceTree = "<group>"; };
+		0813D4881A6D8E07001C4E21 /* Structure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Structure.m; path = ../Structure.m; sourceTree = "<group>"; };
 		0813D48A1A6DD9D3001C4E21 /* SHAUsageStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAUsageStatus.h; sourceTree = "<group>"; };
 		0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAUsageStatus.m; sourceTree = "<group>"; };
 		0813D48D1A70521F001C4E21 /* SHANotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHANotificationManager.h; sourceTree = "<group>"; };
 		0813D48E1A70521F001C4E21 /* SHANotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHANotificationManager.m; sourceTree = "<group>"; };
 		0813D4901A706542001C4E21 /* houseMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "houseMenu@2x.png"; sourceTree = "<group>"; };
 		0813D4911A706543001C4E21 /* houseMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseMenu.png; sourceTree = "<group>"; };
+		0813D4941A7068A8001C4E21 /* NestStructureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestStructureManager.m; sourceTree = "<group>"; };
+		0813D4951A7068A8001C4E21 /* NestStructureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestStructureManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +96,10 @@
 		0813D4391A6D57B8001C4E21 /* Still Here */ = {
 			isa = PBXGroup;
 			children = (
+				0813D4871A6D8E07001C4E21 /* Structure.h */,
+				0813D4881A6D8E07001C4E21 /* Structure.m */,
+				0813D4941A7068A8001C4E21 /* NestStructureManager.m */,
+				0813D4951A7068A8001C4E21 /* NestStructureManager.h */,
 				0813D4901A706542001C4E21 /* houseMenu@2x.png */,
 				0813D4911A706543001C4E21 /* houseMenu.png */,
 				0813D43C1A6D57B8001C4E21 /* AppDelegate.h */,
@@ -138,10 +142,6 @@
 			children = (
 				0813D4731A6D7D48001C4E21 /* FirebaseManager.h */,
 				0813D4741A6D7D48001C4E21 /* FirebaseManager.m */,
-				0813D4681A6D7D21001C4E21 /* NestStructureManager.h */,
-				0813D4691A6D7D21001C4E21 /* NestStructureManager.m */,
-				0813D4871A6D8E07001C4E21 /* Structure.h */,
-				0813D4881A6D8E07001C4E21 /* Structure.m */,
 				0813D46E1A6D7D21001C4E21 /* Firebase.framework */,
 			);
 			name = NestDK;
@@ -236,8 +236,8 @@
 				0813D4751A6D7D48001C4E21 /* FirebaseManager.m in Sources */,
 				0813D4891A6D8E07001C4E21 /* Structure.m in Sources */,
 				0813D48F1A70521F001C4E21 /* SHANotificationManager.m in Sources */,
-				0813D46F1A6D7D21001C4E21 /* NestStructureManager.m in Sources */,
 				0813D48C1A6DD9D3001C4E21 /* SHAUsageStatus.m in Sources */,
+				0813D4961A7068A8001C4E21 /* NestStructureManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
