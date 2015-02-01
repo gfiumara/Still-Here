@@ -9,6 +9,7 @@
 #import "SHANestOperations.h"
 #import "SHAConstants.h"
 #import "AppDelegate.h"
+#import "NestAuthManager.h"
 
 @interface AppDelegate ()
 
@@ -34,7 +35,13 @@
 	if ([[url query] containsString:kSHANestAccessTokenKey]) {
 		NSArray *query = [[url query] componentsSeparatedByString:@"="];
 		NSUInteger accessTokenIndex = [query indexOfObject:kSHANestAccessTokenKey] + 1;
-		[[NSUserDefaults standardUserDefaults] setObject:query[accessTokenIndex] forKey:kSHANestAccessTokenKey];
+		if ([[NestAuthManager sharedManager] saveAccessToken:query[accessTokenIndex]]) {
+			NSAlert *alert = [NSAlert new];
+			alert.alertStyle = NSInformationalAlertStyle;
+			alert.messageText = NSLocalizedString(@"Nest Access Authorized", nil);
+			alert.informativeText = NSLocalizedString(@"You have successfully authenticated with Nest.", nil);
+			[alert runModal];
+		}
 
 		[self subscribeToNestUpdates];
 	}
@@ -49,9 +56,15 @@
 {
 	[self registerURLScheme];
 
-	if ([[NSUserDefaults standardUserDefaults] stringForKey:kSHANestAccessTokenKey] == nil)
+	if ([[NestAuthManager sharedManager] accessToken] == nil) {
+		NSAlert *alert = [NSAlert new];
+		alert.alertStyle = NSInformationalAlertStyle;
+		alert.messageText = NSLocalizedString(@"Grant Access", nil);
+		alert.informativeText = NSLocalizedString(@"You need to grant access to your Nest account. Your web browser will now launch to complete this step.", nil);
+		[alert runModal];
+
 		[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://home.nest.com/login/oauth2?client_id=%@&state=%@", kSHANestAPIClientID, [NSUUID UUID].UUIDString]]];
-	else
+	} else
 		[self subscribeToNestUpdates];
 }
 
