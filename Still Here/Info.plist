@@ -41,6 +41,8 @@
 			</array>
 		</dict>
 	</array>
+	<key>NSUserNotificationAlertStyle</key>
+	<string>alert</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
