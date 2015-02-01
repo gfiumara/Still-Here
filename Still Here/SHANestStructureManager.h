@@ -1,5 +1,5 @@
 //
-//  NestStructureManager.h
+//  SHANestStructureManager.h
 //  Still Here
 //
 //  Created by Greg Fiumara on 1/19/15.
@@ -8,15 +8,15 @@
 
 @class SHAStructure;
 
-@protocol NestStructureManagerDelegate
+@protocol SHANestStructureManagerDelegate
 
 - (void)structureUpdated:(NSDictionary *)structure;
 
 @end
 
-@interface NestStructureManager : NSObject
+@interface SHANestStructureManager : NSObject
 
-@property (nonatomic, strong) id <NestStructureManagerDelegate>delegate;
+@property (nonatomic, strong) id <SHANestStructureManagerDelegate>delegate;
 
 - (void)initialize;
 - (void)saveChangesForStructure:(SHAStructure *)structure;

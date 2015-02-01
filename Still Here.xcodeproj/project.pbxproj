@@ -22,7 +22,7 @@
 		0813D4891A6D8E07001C4E21 /* SHAStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4881A6D8E07001C4E21 /* SHAStructure.m */; };
 		0813D48C1A6DD9D3001C4E21 /* SHAUsageStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */; };
 		0813D48F1A70521F001C4E21 /* SHANotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D48E1A70521F001C4E21 /* SHANotificationManager.m */; };
-		0813D4961A7068A8001C4E21 /* NestStructureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4941A7068A8001C4E21 /* NestStructureManager.m */; };
+		0813D4961A7068A8001C4E21 /* SHANestStructureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0813D4941A7068A8001C4E21 /* SHANestStructureManager.m */; };
 		088ACB721A7E9E0900E5513D /* NestAuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 088ACB711A7E9E0900E5513D /* NestAuthManager.m */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAUsageStatus.m; sourceTree = "<group>"; };
 		0813D48D1A70521F001C4E21 /* SHANotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHANotificationManager.h; sourceTree = "<group>"; };
 		0813D48E1A70521F001C4E21 /* SHANotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHANotificationManager.m; sourceTree = "<group>"; };
-		0813D4941A7068A8001C4E21 /* NestStructureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestStructureManager.m; sourceTree = "<group>"; };
-		0813D4951A7068A8001C4E21 /* NestStructureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestStructureManager.h; sourceTree = "<group>"; };
+		0813D4941A7068A8001C4E21 /* SHANestStructureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHANestStructureManager.m; sourceTree = "<group>"; };
+		0813D4951A7068A8001C4E21 /* SHANestStructureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHANestStructureManager.h; sourceTree = "<group>"; };
 		088ACB701A7E9E0900E5513D /* NestAuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestAuthManager.h; sourceTree = "<group>"; };
 		088ACB711A7E9E0900E5513D /* NestAuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestAuthManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,8 +97,8 @@
 			children = (
 				0813D4871A6D8E07001C4E21 /* SHAStructure.h */,
 				0813D4881A6D8E07001C4E21 /* SHAStructure.m */,
-				0813D4941A7068A8001C4E21 /* NestStructureManager.m */,
-				0813D4951A7068A8001C4E21 /* NestStructureManager.h */,
+				0813D4941A7068A8001C4E21 /* SHANestStructureManager.m */,
+				0813D4951A7068A8001C4E21 /* SHANestStructureManager.h */,
 				0813D43C1A6D57B8001C4E21 /* AppDelegate.h */,
 				0813D43D1A6D57B8001C4E21 /* AppDelegate.m */,
 				0813D48D1A70521F001C4E21 /* SHANotificationManager.h */,
@@ -234,7 +234,7 @@
 				0813D4891A6D8E07001C4E21 /* SHAStructure.m in Sources */,
 				0813D48F1A70521F001C4E21 /* SHANotificationManager.m in Sources */,
 				0813D48C1A6DD9D3001C4E21 /* SHAUsageStatus.m in Sources */,
-				0813D4961A7068A8001C4E21 /* NestStructureManager.m in Sources */,
+				0813D4961A7068A8001C4E21 /* SHANestStructureManager.m in Sources */,
 				088ACB721A7E9E0900E5513D /* NestAuthManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

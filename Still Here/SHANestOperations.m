@@ -13,7 +13,7 @@
 
 @interface SHANestOperations ()
 
-@property (nonatomic, retain) NestStructureManager *nestStructureManager;
+@property (nonatomic, retain) SHANestStructureManager *nestStructureManager;
 
 @property (nonatomic, retain) NSMutableArray *structures;
 @property (nonatomic, retain) SHAUsageStatus *usageStatus;
@@ -42,7 +42,7 @@
 		return (nil);
 
 	// Get the initial structure
-	self.nestStructureManager = [[NestStructureManager alloc] init];
+	self.nestStructureManager = [[SHANestStructureManager alloc] init];
 	[self.nestStructureManager setDelegate:self];
 	[self.nestStructureManager initialize];
 

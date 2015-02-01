@@ -1,16 +1,16 @@
 //
-//  NestStructureManager.m
+//  SHANestStructureManager.m
 //  Still Here
 //
 //  Created by Greg Fiumara on 1/19/15.
 //  Copyright (c) 2015 Greg Fiumara. All rights reserved.
 //
 
-#import "NestStructureManager.h"
+#import "SHANestStructureManager.h"
 #import "SHAStructure.h"
 #import "FirebaseManager.h"
 
-@implementation NestStructureManager
+@implementation SHANestStructureManager
 
 /**
  * Gets the entire structure and converts it to
