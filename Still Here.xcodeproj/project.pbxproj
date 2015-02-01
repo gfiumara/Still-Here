@@ -77,9 +77,9 @@
 		0813D42E1A6D57B8001C4E21 = {
 			isa = PBXGroup;
 			children = (
-				0813D4861A6D801D001C4E21 /* System Frameworks */,
 				0813D4661A6D7CE4001C4E21 /* vendor */,
 				0813D4391A6D57B8001C4E21 /* Still Here */,
+				0813D4861A6D801D001C4E21 /* System Frameworks */,
 				0813D4381A6D57B8001C4E21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,25 +95,17 @@
 		0813D4391A6D57B8001C4E21 /* Still Here */ = {
 			isa = PBXGroup;
 			children = (
-				0813D4871A6D8E07001C4E21 /* SHAStructure.h */,
-				0813D4881A6D8E07001C4E21 /* SHAStructure.m */,
-				0813D4941A7068A8001C4E21 /* SHANestStructureManager.m */,
-				0813D4951A7068A8001C4E21 /* SHANestStructureManager.h */,
 				0813D43C1A6D57B8001C4E21 /* AppDelegate.h */,
 				0813D43D1A6D57B8001C4E21 /* AppDelegate.m */,
-				0813D48D1A70521F001C4E21 /* SHANotificationManager.h */,
-				0813D48E1A70521F001C4E21 /* SHANotificationManager.m */,
-				0813D4631A6D6CB9001C4E21 /* SHANestOperations.h */,
-				0813D4641A6D6CB9001C4E21 /* SHANestOperations.m */,
-				0813D48A1A6DD9D3001C4E21 /* SHAUsageStatus.h */,
-				0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */,
 				0813D4601A6D6943001C4E21 /* SHAConstants.h */,
 				0813D4611A6D6943001C4E21 /* SHAConstants.m */,
-				0813D4441A6D57B8001C4E21 /* Images.xcassets */,
-				0813D4461A6D57B8001C4E21 /* Main.storyboard */,
+				0813D48D1A70521F001C4E21 /* SHANotificationManager.h */,
+				0813D48E1A70521F001C4E21 /* SHANotificationManager.m */,
+				0813D48A1A6DD9D3001C4E21 /* SHAUsageStatus.h */,
+				0813D48B1A6DD9D3001C4E21 /* SHAUsageStatus.m */,
+				088ACB731A7EA53100E5513D /* Nest */,
+				088ACB741A7EA5C200E5513D /* Resources */,
 				0813D43A1A6D57B8001C4E21 /* Supporting Files */,
-				088ACB701A7E9E0900E5513D /* NestAuthManager.h */,
-				088ACB711A7E9E0900E5513D /* NestAuthManager.m */,
 			);
 			path = "Still Here";
 			sourceTree = "<group>";
@@ -155,6 +147,30 @@
 				0813D4771A6D7EB1001C4E21 /* CFNetwork.framework */,
 			);
 			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		088ACB731A7EA53100E5513D /* Nest */ = {
+			isa = PBXGroup;
+			children = (
+				088ACB701A7E9E0900E5513D /* NestAuthManager.h */,
+				088ACB711A7E9E0900E5513D /* NestAuthManager.m */,
+				0813D4631A6D6CB9001C4E21 /* SHANestOperations.h */,
+				0813D4641A6D6CB9001C4E21 /* SHANestOperations.m */,
+				0813D4951A7068A8001C4E21 /* SHANestStructureManager.h */,
+				0813D4941A7068A8001C4E21 /* SHANestStructureManager.m */,
+				0813D4871A6D8E07001C4E21 /* SHAStructure.h */,
+				0813D4881A6D8E07001C4E21 /* SHAStructure.m */,
+			);
+			name = Nest;
+			sourceTree = "<group>";
+		};
+		088ACB741A7EA5C200E5513D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0813D4441A6D57B8001C4E21 /* Images.xcassets */,
+				0813D4461A6D57B8001C4E21 /* Main.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
