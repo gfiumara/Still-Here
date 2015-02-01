@@ -37,7 +37,4 @@ FOUNDATION_EXPORT NSString * const kSHANestAPIClientID;
 /** GET key containing OAuth2 Access Token */
 FOUNDATION_EXPORT NSString * const kSHANestAccessTokenKey;
 
-/** Fifteen minutes in seconds */
-FOUNDATION_EXPORT const NSUInteger kSHAFifteenMinutes;
-
 #endif /* _SHACONSTANTS_H */
