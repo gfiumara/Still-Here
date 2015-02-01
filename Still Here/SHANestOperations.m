@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Greg Fiumara. All rights reserved.
 //
 
-#import "Structure.h"
+#import "SHAStructure.h"
 #import "SHAUsageStatus.h"
 #import "SHANestOperations.h"
 #import "SHANotificationManager.h"
@@ -53,7 +53,7 @@
 
 #pragma mark - Home/Away Actions
 
-- (void)setHomeForStructure:(Structure *)structure
+- (void)setHomeForStructure:(SHAStructure *)structure
 {
 	NSLog(@"Setting \"%@\" to HOME (was %@)", structure.name, structure.away ? @"AWAY" : @"HOME");
 	structure.away = NO;
@@ -62,7 +62,7 @@
 
 - (void)setHomeForStructureID:(NSString *)structureID
 {
-	for (Structure *structure in self.structures) {
+	for (SHAStructure *structure in self.structures) {
 		if ([structure.structureID isEqualToString:structureID]) {
 			[self setHomeForStructure:structure];
 			break;
@@ -70,7 +70,7 @@
 	}
 }
 
-- (void)setAwayForStructure:(Structure *)structure
+- (void)setAwayForStructure:(SHAStructure *)structure
 {
 	NSLog(@"Setting \"%@\" to AWAY (was %@)", structure.name, structure.away ? @"AWAY" : @"HOME");
 	structure.away = YES;
@@ -79,7 +79,7 @@
 
 - (void)setAwayForStructureID:(NSString *)structureID
 {
-	for (Structure *structure in self.structures) {
+	for (SHAStructure *structure in self.structures) {
 		if ([structure.structureID isEqualToString:structureID]) {
 			[self setAwayForStructure:structure];
 			break;
@@ -92,7 +92,7 @@
 	if (self.structures == nil) {
 		self.structures = [@[] mutableCopy];
 		for (NSString *key in structure) {
-			Structure *s = [[Structure alloc] init];
+			SHAStructure *s = [[SHAStructure alloc] init];
 			s.away = ![structure[key][@"away"] isEqualToString:@"home"];
 			s.name = structure[key][@"name"];
 			s.structureID = structure[key][@"structure_id"];
@@ -109,10 +109,10 @@
 	} else {
 		for (NSString *key in structure) {
 			NSString *sid = structure[key][@"structure_id"];
-			for (Structure *s in self.structures) {
+			for (SHAStructure *s in self.structures) {
 				if ([s.structureID isEqualToString:sid]) {
 					NSUInteger index = [self.structures indexOfObject:s];
-					Structure *updatedStructure = self.structures[index];
+					SHAStructure *updatedStructure = self.structures[index];
 
 					updatedStructure.away = ![structure[key][@"away"] isEqualToString:@"home"];
 					updatedStructure.name = structure[key][@"name"];
@@ -129,7 +129,7 @@
 							if (!self.usageStatus.active)
 								return;
 
-							Structure *notificationStructure = self.structures[index];
+							SHAStructure *notificationStructure = self.structures[index];
 							NSLog(@"You're using the computer, but thermostat at %@ is away.", notificationStructure.name);
 							[[SHANotificationManager sharedManager] showActiveButAwayNotificationForStructure:notificationStructure];
 						});

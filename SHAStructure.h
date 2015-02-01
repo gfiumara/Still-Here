@@ -1,5 +1,5 @@
 //
-//  Structure.h
+//  SHAStructure.h
 //  Still Here
 //
 //  Created by Greg Fiumara on 1/19/15.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Structure : NSObject
+@interface SHAStructure : NSObject
 
 @property (nonatomic, copy) NSString *structureID;
 @property (nonatomic, copy) NSString *name;

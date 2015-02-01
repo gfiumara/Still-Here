@@ -30,7 +30,7 @@
 	return (sharedManager);
 }
 
-- (void)showActiveButAwayNotificationForStructure:(Structure *)structure
+- (void)showActiveButAwayNotificationForStructure:(SHAStructure *)structure
 {
 	NSUserNotification *notification = [[NSUserNotification alloc] init];
 	notification.title = [NSString stringWithFormat:@"%@ \"%@\"", NSLocalizedString(@"Away from", nil), structure.name];
@@ -45,7 +45,7 @@
 	[self.timers addObject:[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(homeAwayTimerExpired:) userInfo:@{@"structure" : structure} repeats:NO]];
 }
 
-- (void)showStayingActiveNotificationForStructure:(Structure *)structure
+- (void)showStayingActiveNotificationForStructure:(SHAStructure *)structure
 {
 	NSUserNotification *notification = [[NSUserNotification alloc] init];
 	notification.title = NSLocalizedString(@"Keeping Thermostats Active", nil);
@@ -70,7 +70,7 @@
 		/* Invalidate and remove auto-"home" timer */
 		NSTimer *deletedTimer;
 		for (NSTimer *timer in self.timers) {
-			if ([((Structure *)timer.userInfo[@"structure"]).structureID isEqualToString:notification.identifier]) {
+			if ([((SHAStructure *)timer.userInfo[@"structure"]).structureID isEqualToString:notification.identifier]) {
 				deletedTimer = timer;
 				[timer invalidate];
 				break;

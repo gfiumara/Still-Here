@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Greg Fiumara. All rights reserved.
 //
 
-@class Structure;
+@class SHAStructure;
 
 @protocol NestStructureManagerDelegate
 
@@ -19,7 +19,7 @@
 @property (nonatomic, strong) id <NestStructureManagerDelegate>delegate;
 
 - (void)initialize;
-- (void)saveChangesForStructure:(Structure *)structure;
-- (void)beginSubscriptionForStructure:(Structure *)structure;
+- (void)saveChangesForStructure:(SHAStructure *)structure;
+- (void)beginSubscriptionForStructure:(SHAStructure *)structure;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "NestStructureManager.h"
-#import "Structure.h"
+#import "SHAStructure.h"
 #import "FirebaseManager.h"
 
 @implementation NestStructureManager
@@ -42,7 +42,7 @@
 	[self.delegate structureUpdated:returnStructure];
 }
 
-- (void)beginSubscriptionForStructure:(Structure *)structure
+- (void)beginSubscriptionForStructure:(SHAStructure *)structure
 {
 	[[FirebaseManager sharedManager] addSubscriptionToURL:[NSString stringWithFormat:@"structures/%@/", structure.structureID]
 						    withBlock:^(FDataSnapshot *snapshot) { [self updateStructure:snapshot.value]; }];
@@ -53,7 +53,7 @@
 	NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
-- (void)saveChangesForStructure:(Structure *)structure
+- (void)saveChangesForStructure:(SHAStructure *)structure
 {
 	NSMutableDictionary *values = [[NSMutableDictionary alloc] init];
 	if (structure.away)

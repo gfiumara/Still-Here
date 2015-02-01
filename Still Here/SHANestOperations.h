@@ -13,9 +13,9 @@
 
 + (instancetype)sharedManager;
 
-- (void)setHomeForStructure:(Structure *)structure;
+- (void)setHomeForStructure:(SHAStructure *)structure;
 - (void)setHomeForStructureID:(NSString *)structureID;
-- (void)setAwayForStructure:(Structure *)structure;
+- (void)setAwayForStructure:(SHAStructure *)structure;
 - (void)setAwayForStructureID:(NSString *)structureID;
 
 @end

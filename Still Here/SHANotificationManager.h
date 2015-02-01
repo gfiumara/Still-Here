@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Greg Fiumara. All rights reserved.
 //
 
-#import "Structure.h"
+#import "SHAStructure.h"
 
 #import <Foundation/Foundation.h>
 
 @interface SHANotificationManager : NSObject <NSUserNotificationCenterDelegate>
 
 + (instancetype)sharedManager;
-- (void)showActiveButAwayNotificationForStructure:(Structure *)structure;
-- (void)showStayingActiveNotificationForStructure:(Structure *)structure;
+- (void)showActiveButAwayNotificationForStructure:(SHAStructure *)structure;
+- (void)showStayingActiveNotificationForStructure:(SHAStructure *)structure;
 
 @end
