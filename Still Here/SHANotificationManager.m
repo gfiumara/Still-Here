@@ -49,7 +49,7 @@
 {
 	NSUserNotification *notification = [[NSUserNotification alloc] init];
 	notification.title = NSLocalizedString(@"Keeping Thermostats Active", nil);
-	notification.informativeText = [NSString stringWithFormat:@"%@ \"%@\"", NSLocalizedString(@"Automatically setting status to home at", nil), structure.name];
+	notification.informativeText = [NSString stringWithFormat:@"%@ \"%@.\"", NSLocalizedString(@"Automatically setting status to home at", nil), structure.name];
 	notification.identifier = structure.structureID;
 	notification.hasActionButton = YES;
 	notification.actionButtonTitle = NSLocalizedString(@"Away", nil);
