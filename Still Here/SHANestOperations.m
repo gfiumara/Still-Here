@@ -121,11 +121,6 @@
 
 			[self.nestStructureManager beginSubscriptionForStructure:s];
 			NSLog(@"Began subscription for \"%@\" (%@)", s.name, s.structureID);
-
-			dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-
-				[[SHANotificationManager sharedManager] showActiveButAwayNotificationForStructure:s];
-			});
 		}
 	} else {
 		for (NSString *key in structure) {
